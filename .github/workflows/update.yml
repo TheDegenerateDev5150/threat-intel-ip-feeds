@@ -2,7 +2,7 @@ name: Update IP Blacklists
 
 on:
   schedule:
-    - cron: '17,47 * * * *' # Runs at 17 and 47 minutes past the hour
+    - cron: '17 * * * *' # Her saatin 17. dakikasi
   workflow_dispatch:       # Manuel tetikleme
 
 permissions:
@@ -15,33 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Check commit age (schedule backup guard)
-        id: gate
-        if: github.event_name == 'schedule'
-        run: |
-          last=$(git log -1 --format=%ct HEAD)
-          now=$(date -u +%s)
-          age=$((now - last))
-          echo "Last commit ${age}s ago"
-          if [ "$age" -lt 3000 ]; then
-            echo "Recent commit (<50 min) - this is the hourly backup, skipping rest of job."
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "skip=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - uses: actions/setup-python@v6
-        if: steps.gate.outputs.skip != 'true'
         with:
           python-version: '3.13'
 
       - name: Install dependencies
-        if: steps.gate.outputs.skip != 'true'
         run: pip install -r requirements.txt
 
       - name: Run aggregator
         id: aggregator
-        if: steps.gate.outputs.skip != 'true'
         env:
           ABUSEIPDB_API_KEY: ${{ secrets.ABUSEIPDB_API_KEY }}
           OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
@@ -50,7 +32,6 @@ jobs:
         continue-on-error: true
 
       - name: Commit and push results
-        if: steps.gate.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -63,7 +44,7 @@ jobs:
           fi
 
       - name: Report status
-        if: always() && steps.gate.outputs.skip != 'true'
+        if: always()
         run: |
           if [ "${{ steps.aggregator.outcome }}" = "failure" ]; then
             echo "::warning::Aggregator exited with errors. Check output/health_report.md"
