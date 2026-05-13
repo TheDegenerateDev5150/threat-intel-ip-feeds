@@ -2,7 +2,7 @@ name: Update IP Blacklists
 
 on:
   schedule:
-    - cron: '17,47 * * * *' # Runs at 17 and 47 minutes past the hour
+    - cron: '21 * * * *' # Runs at 17 and 47 minutes past the hour
   workflow_dispatch:       # Manuel tetikleme
 
 permissions:
