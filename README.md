@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/github/license/ziyadnz/threat-intel-ip-feeds)
 ![Stars](https://img.shields.io/github/stars/ziyadnz/threat-intel-ip-feeds?style=social)
 
-**Hourly updated, firewall-ready IP blocklist aggregated from 19+ threat intelligence sources. ~120,000+ unique malicious IPs, deduplicated, validated, and ready to import.**
+**Hourly updated, firewall-ready IP blocklist aggregated from 18+ threat intelligence sources. ~120,000+ unique malicious IPs, deduplicated, validated, and ready to import.**
 
 ```
 https://raw.githubusercontent.com/ziyadnz/threat-intel-ip-feeds/main/output/hourlyIPv4.txt
@@ -232,12 +232,11 @@ with open("output/blacklist.csv") as f:
 
 ---
 
-## Sources (18 feeds)
+## Sources (17 feeds)
 
 | Source | Type | Region | Registration |
 |--------|------|--------|-------------|
 | Spamhaus DROP / DROPv6 | CIDR blocklist | Global | None |
-| DShield / SANS ISC | Intel feed | Global | None |
 | Blocklist.de (7 categories) | Attack IPs | Global | None |
 | CINS Army | Threat list | Global | None |
 | Emerging Threats | Compromised IPs | Global | None |
@@ -331,8 +330,8 @@ This isn't a script that breaks silently. Every failure is tracked, reported, an
 
 | Mechanism | What It Does |
 |-----------|-------------|
-| **Async I/O** | All 21 sources fetched concurrently via `asyncio.gather` + `aiohttp` — single event loop, no thread pool |
-| **Error Isolation** | Each source runs as an independent coroutine. One failure never affects the other 18+ |
+| **Async I/O** | All 19 sources fetched concurrently via `asyncio.gather` + `aiohttp` — single event loop, no thread pool |
+| **Error Isolation** | Each source runs as an independent coroutine. One failure never affects the other 17+ |
 | **Auto Retry** | Failed requests retry 3x with exponential backoff (2s, 4s, 8s) using `aiohttp`. Permanent 4xx errors skip retry |
 | **Rollback Protection** | If success rate drops below 20%, existing output files are preserved — not overwritten with bad data |
 | **Health Tracking** | `source_health.json` records every run: consecutive failures, last success, IP counts |

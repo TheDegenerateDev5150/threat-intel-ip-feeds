@@ -17,7 +17,6 @@ from threat_intel.infrastructure.sources.urls import (
     BINARY_DEFENSE,
     BLOCKLIST_DE,
     CINS_ARMY,
-    DSHIELD_INTELFEED,
     EMERGING_THREATS,
     GREENSNOW,
     SPAMHAUS_DROP,
@@ -62,33 +61,6 @@ class SpamhausDropV6Source(TextListSource):
                     ip = IPAddress.parse(cidr)
                     if ip:
                         result.add(ip)
-        return result
-
-
-class DShieldSource:
-    """DShield/SANS ISC — JSON intel feed."""
-
-    def __init__(self, http: HttpClient):
-        self._http = http
-
-    @property
-    def name(self) -> str:
-        return "DShield"
-
-    @property
-    def category(self) -> str:
-        return "scanner"
-
-    def fetch(self) -> Set[IPAddress]:
-        headers = {"User-Agent": "IP-Blacklist-Aggregator/5.0"}
-        data = self._http.get_json(DSHIELD_INTELFEED, headers=headers)
-        result = set()
-        if isinstance(data, list):
-            for entry in data:
-                raw = entry.get("ip", "")
-                ip = IPValidator.parse_and_validate(raw)
-                if ip:
-                    result.add(ip)
         return result
 
 

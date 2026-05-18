@@ -28,7 +28,7 @@ def _make_result():
     cidr = IPAddress.parse("10.0.0.0/8")
 
     indicators = [
-        ThreatIndicator.create(ip4, frozenset({"DShield"}),
+        ThreatIndicator.create(ip4, frozenset({"CINS Army"}),
                                ThreatCategory.SCANNER, now),
         ThreatIndicator.create(ip6, frozenset({"Tor Exit Nodes"}),
                                ThreatCategory.ANONYMIZER, now),
@@ -40,7 +40,7 @@ def _make_result():
         timestamp=now,
         elapsed_seconds=5.0,
         source_results=[
-            SourceResult("DShield", frozenset({ip4})),
+            SourceResult("CINS Army", frozenset({ip4})),
             SourceResult("Tor Exit Nodes", frozenset({ip6})),
             SourceResult("Spamhaus DROP", frozenset({cidr})),
         ],
@@ -97,7 +97,7 @@ class TestCSVWriter:
             reader = csv.DictReader(f)
             rows = {r["ip"]: r for r in reader}
 
-        assert rows["1.2.3.4"]["sources"] == "DShield"
+        assert rows["1.2.3.4"]["sources"] == "CINS Army"
         assert rows["1.2.3.4"]["category"] == "scanner"
         assert rows["1.2.3.4"]["confidence"] == "20"
 

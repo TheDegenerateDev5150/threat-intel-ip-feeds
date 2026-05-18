@@ -26,7 +26,6 @@ from threat_intel.domain.entities import (
 SOURCE_CATEGORY_MAP: Dict[str, ThreatCategory] = {
     "Spamhaus DROP": ThreatCategory.INFRASTRUCTURE,
     "Spamhaus DROPv6": ThreatCategory.INFRASTRUCTURE,
-    "DShield": ThreatCategory.SCANNER,
     "Blocklist.de (all)": ThreatCategory.ATTACKER,
     "Blocklist.de (ssh)": ThreatCategory.BRUTE_FORCE,
     "Blocklist.de (mail)": ThreatCategory.SPAM,

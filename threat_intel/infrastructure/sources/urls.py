@@ -8,9 +8,6 @@ editing only this file. No source adapter code needs to change.
 SPAMHAUS_DROP = "https://www.spamhaus.org/drop/drop.txt"
 SPAMHAUS_DROPV6 = "https://www.spamhaus.org/drop/dropv6.txt"
 
-# SANS / DShield
-DSHIELD_INTELFEED = "https://isc.sans.edu/api/intelfeed?json"
-
 # Blocklist.de — {service} is substituted at runtime
 BLOCKLIST_DE = "https://lists.blocklist.de/lists/{service}.txt"
 

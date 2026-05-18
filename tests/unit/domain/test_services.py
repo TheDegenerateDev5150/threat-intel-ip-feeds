@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 class TestResolveCategory:
     def test_known_source(self):
         # Arrange
-        sources = frozenset({"DShield"})
+        sources = frozenset({"CINS Army"})
 
         # Act
         category = resolve_category(sources)
@@ -191,7 +191,7 @@ class TestIndicatorBuilder:
         # Arrange
         now = datetime.now(timezone.utc)
         ip = IPAddress.parse("1.2.3.4")
-        ip_sources = {"1.2.3.4": frozenset({"DShield"})}
+        ip_sources = {"1.2.3.4": frozenset({"CINS Army"})}
         ip_objects = {"1.2.3.4": ip}
 
         # Act

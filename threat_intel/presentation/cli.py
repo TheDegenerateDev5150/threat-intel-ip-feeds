@@ -19,7 +19,6 @@ from threat_intel.infrastructure.sources.global_sources import (
     BinaryDefenseSource,
     BlocklistDeSource,
     CinsArmySource,
-    DShieldSource,
     EmergingThreatsSource,
     GreenSnowSource,
     SpamhausDropSource,
@@ -38,6 +37,7 @@ from threat_intel.infrastructure.sources.api_sources import (
 from threat_intel.infrastructure.writers.raw_writer import (
     AnnotatedIPv4Writer,
     AnnotatedIPv6Writer,
+    PerSourceIPv4Writer,
     RawIPv4Writer,
 )
 from threat_intel.infrastructure.writers.csv_writer import CSVWriter
@@ -95,7 +95,6 @@ def _build_sources(http: RequestsClient, config: AppConfig) -> list:
     return [
         SpamhausDropSource(http),
         SpamhausDropV6Source(http),
-        DShieldSource(http),
         BlocklistDeSource(http, "all"),
         BlocklistDeSource(http, "ssh"),
         BlocklistDeSource(http, "mail"),
@@ -120,6 +119,7 @@ def _build_writers() -> list:
     """Build all output writer instances."""
     return [
         RawIPv4Writer(),
+        PerSourceIPv4Writer(),
         AnnotatedIPv4Writer(),
         AnnotatedIPv6Writer(),
         CSVWriter(),
@@ -216,7 +216,7 @@ def _main():
     +======================================================+
     |       IP BLACKLIST AGGREGATOR v6.0                    |
     |       Clean Architecture + Thread Parallelism         |
-    |  21 sources | requests | STIX | CSV | Dedup Metrics   |
+    |  19 sources | requests | STIX | CSV | Dedup Metrics   |
     +======================================================+
     """)
 
