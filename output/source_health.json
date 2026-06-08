@@ -1,38 +1,38 @@
 {
   "Spamhaus DROPv6": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
-    "last_ip_count": 93,
+    "last_ip_count": 86,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Spamhaus DROP": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
     "last_ip_count": 1621,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Blocklist.de (ssh)": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
-    "last_ip_count": 5044,
+    "last_ip_count": 5024,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Blocklist.de (apache)": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
-    "last_ip_count": 8851,
+    "last_ip_count": 8878,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Feodo Tracker": {
@@ -45,129 +45,129 @@
     "total_failures": 0
   },
   "Blocklist.de (mail)": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
-    "last_ip_count": 12761,
+    "last_ip_count": 12788,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Blocklist.de (bots)": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
-    "last_ip_count": 3563,
+    "last_ip_count": 3491,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Blocklist.de (bruteforcelogin)": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
-    "last_ip_count": 646,
+    "last_ip_count": 671,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Blocklist.de (strongips)": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
     "last_ip_count": 335,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Blocklist.de (all)": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
-    "last_ip_count": 22811,
+    "last_ip_count": 22770,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "AbuseIPDB": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
     "last_ip_count": 10000,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "AlienVault OTX": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
     "last_ip_count": 160,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Tor Exit Nodes": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
     "last_ip_count": 1259,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "GreenSnow": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": "2026-06-01T16:47:09.325839+00:00",
     "last_failure_reason": "HttpError: HTTP 503: <!DOCTYPE html>\n<html style=\"height:100%\">\n<head>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\" />\n<title> 503 Service Unavailable\r\n</title></head>\n<body style=",
-    "last_ip_count": 4604,
+    "last_ip_count": 4627,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 10
   },
   "Emerging Threats": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
-    "last_ip_count": 525,
+    "last_ip_count": 519,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "Stamparm IPsum": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
     "last_ip_count": 37875,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "BinaryDefense": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": null,
     "last_failure_reason": null,
     "last_ip_count": 3357,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 0
   },
   "RTBH (Turkiye)": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": "2026-05-17T00:09:17.977496+00:00",
     "last_failure_reason": "HttpError: HTTP 522: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-",
-    "last_ip_count": 56063,
+    "last_ip_count": 54615,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 4
   },
   "CINS Army": {
-    "last_success": "2026-06-08T19:35:25.946902+00:00",
+    "last_success": "2026-06-08T22:01:23.396836+00:00",
     "last_failure": "2026-06-06T08:02:52.115804+00:00",
     "last_failure_reason": "ConnectTimeout: HTTPSConnectionPool(host='cinsscore.com', port=443): Max retries exceeded with url: /list/ci-badguys.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='cinsscore.com', port=443) at 0x7f00012f7890>, 'Connection to cinsscore.com timed out. (connect timeout=60)'))",
     "last_ip_count": 15000,
     "consecutive_failures": 0,
-    "total_runs": 648,
+    "total_runs": 649,
     "total_failures": 2
   },
   "DShield": {
@@ -190,11 +190,11 @@
   },
   "SGB (Turkiye)": {
     "last_success": "2026-06-04T05:05:17.692840+00:00",
-    "last_failure": "2026-06-08T19:35:25.946902+00:00",
+    "last_failure": "2026-06-08T22:01:23.396836+00:00",
     "last_failure_reason": "HttpError: HTTP 429: <html>\r\n<head><title>429 Too Many Requests</title></head>\r\n<body>\r\n<center><h1>429 Too Many Requests</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
     "last_ip_count": 10000,
-    "consecutive_failures": 38,
-    "total_runs": 237,
-    "total_failures": 45
+    "consecutive_failures": 39,
+    "total_runs": 238,
+    "total_failures": 46
   }
 }
