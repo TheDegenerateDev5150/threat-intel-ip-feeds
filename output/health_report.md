@@ -1,7 +1,7 @@
 # IP Blacklist Aggregator - Health Report
 
-**Date:** 2026-06-14T01:37:07.955713+00:00
-**Duration:** 39.74s
+**Date:** 2026-06-14T06:57:11.795053+00:00
+**Duration:** 52.35s
 **Successful:** 18/19
 
 ## Failed Sources This Run
@@ -21,49 +21,49 @@
 
 | Metric | Value |
 |--------|-------|
-| Unique to single source | 56,359 |
-| Found in multiple sources | 44,889 |
+| Unique to single source | 57,934 |
+| Found in multiple sources | 45,039 |
 | Max source overlap | 9 |
-| Avg sources per IP | 1.94 |
+| Avg sources per IP | 1.91 |
 
 ### Per-Source Contribution
 
 | Source | Unique | Shared | Unique % |
 |--------|--------|--------|----------|
-| RTBH (Turkiye) | 30,336 | 25,985 | 53.9% |
-| SGB (Turkiye) | 9,771 | 229 | 97.7% |
-| Stamparm IPsum | 7,033 | 31,194 | 18.4% |
-| CINS Army | 4,266 | 10,734 | 28.4% |
+| RTBH (Turkiye) | 30,976 | 25,774 | 54.6% |
+| SGB (Turkiye) | 9,770 | 230 | 97.7% |
+| Stamparm IPsum | 7,037 | 31,190 | 18.4% |
+| CINS Army | 5,123 | 9,877 | 34.2% |
 | Spamhaus DROP | 1,697 | 0 | 100.0% |
-| BinaryDefense | 1,187 | 3,796 | 23.8% |
-| AbuseIPDB | 888 | 9,112 | 8.9% |
-| Tor Exit Nodes | 621 | 638 | 49.3% |
-| GreenSnow | 253 | 6,217 | 3.9% |
+| BinaryDefense | 1,189 | 3,794 | 23.9% |
+| AbuseIPDB | 887 | 9,113 | 8.9% |
+| Tor Exit Nodes | 622 | 638 | 49.4% |
+| GreenSnow | 319 | 6,178 | 4.9% |
 | AlienVault OTX | 146 | 22 | 86.9% |
 | Spamhaus DROPv6 | 94 | 0 | 100.0% |
 | Emerging Threats | 31 | 497 | 5.9% |
+| Blocklist.de (all) | 23 | 21,388 | 0.1% |
 | Blocklist.de (strongips) | 20 | 318 | 5.9% |
-| Blocklist.de (all) | 16 | 21,420 | 0.1% |
-| Blocklist.de (ssh) | 0 | 5,760 | 0.0% |
-| Blocklist.de (mail) | 0 | 12,742 | 0.0% |
-| Blocklist.de (apache) | 0 | 8,967 | 0.0% |
-| Blocklist.de (bots) | 0 | 1,469 | 0.0% |
-| Blocklist.de (bruteforcelogin) | 0 | 809 | 0.0% |
+| Blocklist.de (ssh) | 0 | 5,644 | 0.0% |
+| Blocklist.de (mail) | 0 | 12,720 | 0.0% |
+| Blocklist.de (apache) | 0 | 9,020 | 0.0% |
+| Blocklist.de (bots) | 0 | 1,446 | 0.0% |
+| Blocklist.de (bruteforcelogin) | 0 | 830 | 0.0% |
 
 ### Top Source Pair Overlaps
 
 | Pair | Shared IPs |
 |------|-----------|
-| Stamparm IPsum & RTBH (Turkiye) | 22,479 |
-| Blocklist.de (all) & Blocklist.de (mail) | 12,742 |
-| Blocklist.de (all) & Stamparm IPsum | 10,113 |
-| CINS Army & Stamparm IPsum | 9,779 |
-| Blocklist.de (all) & RTBH (Turkiye) | 9,619 |
-| Blocklist.de (all) & Blocklist.de (apache) | 8,967 |
+| Stamparm IPsum & RTBH (Turkiye) | 22,547 |
+| Blocklist.de (all) & Blocklist.de (mail) | 12,720 |
+| Blocklist.de (all) & Stamparm IPsum | 9,872 |
+| Blocklist.de (all) & RTBH (Turkiye) | 9,144 |
+| Blocklist.de (all) & Blocklist.de (apache) | 9,020 |
+| CINS Army & Stamparm IPsum | 8,966 |
 | Stamparm IPsum & AbuseIPDB | 8,444 |
 | Blocklist.de (mail) & Blocklist.de (apache) | 7,967 |
-| RTBH (Turkiye) & AbuseIPDB | 6,918 |
-| CINS Army & RTBH (Turkiye) | 6,473 |
+| RTBH (Turkiye) & AbuseIPDB | 6,941 |
+| CINS Army & RTBH (Turkiye) | 5,807 |
 
 ## 2 Sources Stale (30+ days)
 
@@ -76,28 +76,28 @@
 
 | Source | Failures | Last Failure | Reason |
 |--------|----------|-------------|--------|
-| SGB (Turkiye) | 77 | 2026-06-14 | HttpError: HTTP 429: <html>
+| SGB (Turkiye) | 78 | 2026-06-14 | HttpError: HTTP 429: <html>
 <head><title>429 Too Many Reque |
 
 ## All Sources
 
 | Source | IPs | Status |
 |--------|-----|--------|
-| RTBH (Turkiye) | 56,321 | OK |
+| RTBH (Turkiye) | 56,750 | OK |
 | Stamparm IPsum | 38,227 | OK |
-| Blocklist.de (all) | 21,436 | OK |
+| Blocklist.de (all) | 21,411 | OK |
 | CINS Army | 15,000 | OK |
-| Blocklist.de (mail) | 12,742 | OK |
+| Blocklist.de (mail) | 12,720 | OK |
 | AbuseIPDB | 10,000 | OK |
 | SGB (Turkiye) | 10,000 | CACHED |
-| Blocklist.de (apache) | 8,967 | OK |
-| GreenSnow | 6,470 | OK |
-| Blocklist.de (ssh) | 5,760 | OK |
+| Blocklist.de (apache) | 9,020 | OK |
+| GreenSnow | 6,497 | OK |
+| Blocklist.de (ssh) | 5,644 | OK |
 | BinaryDefense | 4,983 | OK |
 | Spamhaus DROP | 1,697 | OK |
-| Blocklist.de (bots) | 1,469 | OK |
-| Tor Exit Nodes | 1,259 | OK |
-| Blocklist.de (bruteforcelogin) | 809 | OK |
+| Blocklist.de (bots) | 1,446 | OK |
+| Tor Exit Nodes | 1,260 | OK |
+| Blocklist.de (bruteforcelogin) | 830 | OK |
 | Emerging Threats | 528 | OK |
 | Blocklist.de (strongips) | 338 | OK |
 | AlienVault OTX | 168 | OK |
