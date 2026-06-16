@@ -29,7 +29,7 @@ class SgbSource(ThreatSource):
     def category(self) -> str:
         return "government-feed"
 
-    PAGE_SIZE = 10000
+    PAGE_SIZE = 9999
 
     def fetch(self) -> Set[IPAddress]:
         result = set()
