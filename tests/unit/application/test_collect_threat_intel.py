@@ -160,6 +160,26 @@ class TestCollectThreatIntelUseCase:
         assert health_repo.saved["TestSrc"].consecutive_failures == 0
         assert health_repo.saved["TestSrc"].last_ip_count == 1
 
+    def test_prunes_health_records_for_removed_sources(self):
+        health_repo = StubHealthRepo()
+        # Simulate an orphan record left behind by a source that was removed
+        # from the registry but still lingers in persisted health state.
+        health_repo.load_all = lambda: {
+            "Removed Feed": SourceHealthRecord(source_name="Removed Feed"),
+        }
+        src = StubSource("ActiveSrc", {IPAddress.parse("1.2.3.4")})
+        uc = CollectThreatIntelUseCase(
+            sources=[src],
+            whitelist_repo=StubWhitelistRepo(),
+            health_repo=health_repo,
+            source_cache=self.source_cache,
+        )
+
+        uc.execute()
+
+        assert "ActiveSrc" in health_repo.saved
+        assert "Removed Feed" not in health_repo.saved
+
     def test_overlap_metrics_computed(self):
         ip = IPAddress.parse("1.2.3.4")
         src1 = StubSource("A", {ip})

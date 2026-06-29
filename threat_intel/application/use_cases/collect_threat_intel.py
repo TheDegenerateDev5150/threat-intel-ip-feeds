@@ -174,6 +174,7 @@ class CollectThreatIntelUseCase:
             )
 
     def _update_health(self, results: List[SourceResult], now: datetime):
+        active_names = {result.source_name for result in results}
         health = self._health_repo.load_all()
 
         for result in results:
@@ -188,5 +189,15 @@ class CollectThreatIntelUseCase:
                 record = record.with_success(result.ip_count, now)
 
             health[name] = record
+
+        # Drop records for sources that are no longer registered. Otherwise a
+        # removed feed lingers as permanently "stale", which keeps the health
+        # report's alert condition true forever and prevents resolved health
+        # issues from ever being auto-closed.
+        health = {
+            name: record
+            for name, record in health.items()
+            if name in active_names
+        }
 
         self._health_repo.save_all(health)

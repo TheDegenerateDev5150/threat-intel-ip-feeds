@@ -35,15 +35,6 @@
     "total_runs": 803,
     "total_failures": 0
   },
-  "Feodo Tracker": {
-    "last_success": "2026-05-12T20:23:35.606617+00:00",
-    "last_failure": null,
-    "last_failure_reason": null,
-    "last_ip_count": 1,
-    "consecutive_failures": 0,
-    "total_runs": 411,
-    "total_failures": 0
-  },
   "Blocklist.de (mail)": {
     "last_success": "2026-06-29T04:59:55.019508+00:00",
     "last_failure": null,
@@ -169,24 +160,6 @@
     "consecutive_failures": 0,
     "total_runs": 803,
     "total_failures": 4
-  },
-  "DShield": {
-    "last_success": "2026-05-18T20:46:33.201399+00:00",
-    "last_failure": null,
-    "last_failure_reason": null,
-    "last_ip_count": 110425,
-    "consecutive_failures": 0,
-    "total_runs": 478,
-    "total_failures": 0
-  },
-  "USOM (Turkiye)": {
-    "last_success": "2026-05-12T20:23:35.606617+00:00",
-    "last_failure": "2026-04-15T08:20:55.076760+00:00",
-    "last_failure_reason": "ClientResponseError: 429, message='<html>\\r\\n<head><title>429 Too Many Requests</title></head>\\r\\n<body>\\r\\n<center><h1>429 Too Many Requests</h1></center>\\r\\n<hr><center>nginx</center>\\r\\n</body>\\r\\n</html>\\r\\n', url='https://www.usom.gov.tr/api/address/index?type=ip&page=135'",
-    "last_ip_count": 2840,
-    "consecutive_failures": 0,
-    "total_runs": 411,
-    "total_failures": 7
   },
   "SGB (Turkiye)": {
     "last_success": "2026-06-29T04:59:55.019508+00:00",
