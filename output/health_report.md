@@ -1,74 +1,74 @@
 # IP Blacklist Aggregator - Health Report
 
-**Date:** 2026-06-29T23:16:14.717080+00:00
-**Duration:** 98.36s
+**Date:** 2026-06-30T01:27:15.701798+00:00
+**Duration:** 102.04s
 **Successful:** 19/19
 
 ## Deduplication & Source Overlap
 
 | Metric | Value |
 |--------|-------|
-| Unique to single source | 50,992 |
-| Found in multiple sources | 47,391 |
+| Unique to single source | 49,932 |
+| Found in multiple sources | 48,525 |
 | Max source overlap | 9 |
-| Avg sources per IP | 1.96 |
+| Avg sources per IP | 2.02 |
 
 ### Per-Source Contribution
 
 | Source | Unique | Shared | Unique % |
 |--------|--------|--------|----------|
-| RTBH (Turkiye) | 23,541 | 25,743 | 47.8% |
-| SGB (Turkiye) | 9,694 | 306 | 96.9% |
-| CINS Army | 6,943 | 8,057 | 46.3% |
-| Stamparm IPsum | 6,233 | 26,827 | 18.9% |
+| RTBH (Turkiye) | 24,870 | 24,530 | 50.3% |
+| SGB (Turkiye) | 9,699 | 301 | 97.0% |
+| Stamparm IPsum | 5,900 | 27,866 | 17.5% |
+| CINS Army | 5,034 | 9,966 | 33.6% |
 | Spamhaus DROP | 1,684 | 0 | 100.0% |
-| AbuseIPDB | 923 | 9,077 | 9.2% |
-| Tor Exit Nodes | 588 | 639 | 47.9% |
-| GreenSnow | 521 | 5,768 | 8.3% |
-| BinaryDefense | 347 | 1,725 | 16.7% |
+| AbuseIPDB | 854 | 9,146 | 8.5% |
+| Tor Exit Nodes | 592 | 635 | 48.2% |
+| BinaryDefense | 401 | 1,924 | 17.2% |
+| GreenSnow | 395 | 5,986 | 6.2% |
 | AlienVault OTX | 324 | 54 | 85.7% |
 | Spamhaus DROPv6 | 94 | 0 | 100.0% |
-| Blocklist.de (all) | 55 | 25,981 | 0.2% |
-| Blocklist.de (strongips) | 32 | 265 | 10.8% |
-| Emerging Threats | 12 | 618 | 1.9% |
-| Blocklist.de (bruteforcelogin) | 1 | 3,537 | 0.0% |
-| Blocklist.de (ssh) | 0 | 5,018 | 0.0% |
-| Blocklist.de (mail) | 0 | 13,297 | 0.0% |
-| Blocklist.de (apache) | 0 | 11,597 | 0.0% |
-| Blocklist.de (bots) | 0 | 3,437 | 0.0% |
+| Blocklist.de (strongips) | 36 | 261 | 12.1% |
+| Blocklist.de (all) | 26 | 27,408 | 0.1% |
+| Emerging Threats | 22 | 608 | 3.5% |
+| Blocklist.de (bruteforcelogin) | 1 | 5,009 | 0.0% |
+| Blocklist.de (ssh) | 0 | 5,074 | 0.0% |
+| Blocklist.de (mail) | 0 | 13,181 | 0.0% |
+| Blocklist.de (apache) | 0 | 13,159 | 0.0% |
+| Blocklist.de (bots) | 0 | 3,423 | 0.0% |
 
 ### Top Source Pair Overlaps
 
 | Pair | Shared IPs |
 |------|-----------|
-| Stamparm IPsum & RTBH (Turkiye) | 20,250 |
-| Blocklist.de (all) & Blocklist.de (mail) | 13,297 |
-| Blocklist.de (all) & Blocklist.de (apache) | 11,596 |
-| Blocklist.de (all) & RTBH (Turkiye) | 10,249 |
-| Blocklist.de (all) & Stamparm IPsum | 8,115 |
+| Stamparm IPsum & RTBH (Turkiye) | 19,364 |
+| Blocklist.de (all) & Blocklist.de (mail) | 13,181 |
+| Blocklist.de (all) & Blocklist.de (apache) | 13,158 |
+| Blocklist.de (all) & RTBH (Turkiye) | 9,992 |
+| Blocklist.de (all) & Stamparm IPsum | 9,506 |
+| CINS Army & Stamparm IPsum | 8,846 |
+| Stamparm IPsum & AbuseIPDB | 8,339 |
 | Blocklist.de (mail) & Blocklist.de (apache) | 7,967 |
-| Stamparm IPsum & AbuseIPDB | 7,414 |
-| CINS Army & Stamparm IPsum | 7,206 |
-| RTBH (Turkiye) & AbuseIPDB | 6,517 |
-| Blocklist.de (all) & Blocklist.de (ssh) | 5,017 |
+| RTBH (Turkiye) & AbuseIPDB | 6,524 |
+| CINS Army & RTBH (Turkiye) | 5,824 |
 
 ## All Sources
 
 | Source | IPs | Status |
 |--------|-----|--------|
-| RTBH (Turkiye) | 49,284 | OK |
-| Stamparm IPsum | 33,060 | OK |
-| Blocklist.de (all) | 26,036 | OK |
+| RTBH (Turkiye) | 49,400 | OK |
+| Stamparm IPsum | 33,766 | OK |
+| Blocklist.de (all) | 27,434 | OK |
 | CINS Army | 15,000 | OK |
-| Blocklist.de (mail) | 13,297 | OK |
-| Blocklist.de (apache) | 11,597 | OK |
+| Blocklist.de (mail) | 13,181 | OK |
+| Blocklist.de (apache) | 13,159 | OK |
 | AbuseIPDB | 10,000 | OK |
 | SGB (Turkiye) | 10,000 | OK |
-| GreenSnow | 6,289 | OK |
-| Blocklist.de (ssh) | 5,018 | OK |
-| Blocklist.de (bruteforcelogin) | 3,538 | OK |
-| Blocklist.de (bots) | 3,437 | OK |
-| BinaryDefense | 2,072 | OK |
+| GreenSnow | 6,381 | OK |
+| Blocklist.de (ssh) | 5,074 | OK |
+| Blocklist.de (bruteforcelogin) | 5,010 | OK |
+| Blocklist.de (bots) | 3,423 | OK |
+| BinaryDefense | 2,325 | OK |
 | Spamhaus DROP | 1,684 | OK |
 | Tor Exit Nodes | 1,227 | OK |
 | Emerging Threats | 630 | OK |
