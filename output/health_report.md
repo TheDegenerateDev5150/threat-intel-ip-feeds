@@ -1,75 +1,75 @@
 # IP Blacklist Aggregator - Health Report
 
-**Date:** 2026-07-27T11:39:06.728807+00:00
-**Duration:** 35.3s
+**Date:** 2026-07-27T15:13:25.524897+00:00
+**Duration:** 294.89s
 **Successful:** 19/19
 
 ## Deduplication & Source Overlap
 
 | Metric | Value |
 |--------|-------|
-| Unique to single source | 62,353 |
-| Found in multiple sources | 41,248 |
-| Max source overlap | 8 |
-| Avg sources per IP | 1.8 |
+| Unique to single source | 63,839 |
+| Found in multiple sources | 41,433 |
+| Max source overlap | 9 |
+| Avg sources per IP | 1.78 |
 
 ### Per-Source Contribution
 
 | Source | Unique | Shared | Unique % |
 |--------|--------|--------|----------|
-| RTBH (Turkiye) | 36,312 | 24,471 | 59.7% |
-| SGB (Turkiye) | 9,628 | 372 | 96.3% |
-| CINS Army | 7,120 | 7,880 | 47.5% |
-| Stamparm IPsum | 5,419 | 24,156 | 18.3% |
+| RTBH (Turkiye) | 36,887 | 24,236 | 60.3% |
+| SGB (Turkiye) | 9,625 | 375 | 96.2% |
+| CINS Army | 7,433 | 7,567 | 49.6% |
+| Stamparm IPsum | 5,455 | 24,120 | 18.4% |
 | Spamhaus DROP | 1,663 | 0 | 100.0% |
-| Tor Exit Nodes | 805 | 575 | 58.3% |
-| AbuseIPDB | 611 | 9,389 | 6.1% |
-| GreenSnow | 298 | 2,758 | 9.8% |
+| AbuseIPDB | 1,179 | 8,821 | 11.8% |
+| Tor Exit Nodes | 800 | 586 | 57.7% |
+| GreenSnow | 301 | 2,844 | 9.6% |
 | AlienVault OTX | 190 | 37 | 83.7% |
-| BinaryDefense | 114 | 657 | 14.8% |
+| BinaryDefense | 113 | 658 | 14.7% |
 | Spamhaus DROPv6 | 93 | 0 | 100.0% |
 | Emerging Threats | 49 | 534 | 8.4% |
-| Blocklist.de (strongips) | 29 | 308 | 8.6% |
-| Blocklist.de (all) | 19 | 22,010 | 0.1% |
-| Blocklist.de (apache) | 3 | 9,116 | 0.0% |
-| Blocklist.de (ssh) | 0 | 4,607 | 0.0% |
-| Blocklist.de (mail) | 0 | 12,960 | 0.0% |
-| Blocklist.de (bots) | 0 | 3,179 | 0.0% |
-| Blocklist.de (bruteforcelogin) | 0 | 917 | 0.0% |
+| Blocklist.de (strongips) | 31 | 306 | 9.2% |
+| Blocklist.de (all) | 16 | 22,197 | 0.1% |
+| Blocklist.de (mail) | 3 | 12,928 | 0.0% |
+| Blocklist.de (bruteforcelogin) | 1 | 961 | 0.1% |
+| Blocklist.de (ssh) | 0 | 4,667 | 0.0% |
+| Blocklist.de (apache) | 0 | 9,160 | 0.0% |
+| Blocklist.de (bots) | 0 | 3,287 | 0.0% |
 
 ### Top Source Pair Overlaps
 
 | Pair | Shared IPs |
 |------|-----------|
-| Stamparm IPsum & RTBH (Turkiye) | 18,846 |
-| Blocklist.de (all) & Blocklist.de (mail) | 12,960 |
-| Blocklist.de (all) & RTBH (Turkiye) | 9,409 |
-| Blocklist.de (all) & Blocklist.de (apache) | 9,116 |
-| Blocklist.de (all) & Stamparm IPsum | 8,286 |
-| Stamparm IPsum & AbuseIPDB | 8,024 |
+| Stamparm IPsum & RTBH (Turkiye) | 18,888 |
+| Blocklist.de (all) & Blocklist.de (mail) | 12,918 |
+| Blocklist.de (all) & RTBH (Turkiye) | 9,232 |
+| Blocklist.de (all) & Blocklist.de (apache) | 9,160 |
+| Blocklist.de (all) & Stamparm IPsum | 8,096 |
 | Blocklist.de (mail) & Blocklist.de (apache) | 7,967 |
-| RTBH (Turkiye) & AbuseIPDB | 7,750 |
-| CINS Army & Stamparm IPsum | 6,573 |
-| CINS Army & RTBH (Turkiye) | 5,355 |
+| Stamparm IPsum & AbuseIPDB | 7,464 |
+| RTBH (Turkiye) & AbuseIPDB | 6,922 |
+| CINS Army & Stamparm IPsum | 6,176 |
+| CINS Army & RTBH (Turkiye) | 5,076 |
 
 ## All Sources
 
 | Source | IPs | Status |
 |--------|-----|--------|
-| RTBH (Turkiye) | 60,783 | OK |
+| RTBH (Turkiye) | 61,123 | OK |
 | Stamparm IPsum | 29,575 | OK |
-| Blocklist.de (all) | 22,029 | OK |
+| Blocklist.de (all) | 22,213 | OK |
 | CINS Army | 15,000 | OK |
-| Blocklist.de (mail) | 12,960 | OK |
+| Blocklist.de (mail) | 12,931 | OK |
 | AbuseIPDB | 10,000 | OK |
 | SGB (Turkiye) | 10,000 | OK |
-| Blocklist.de (apache) | 9,119 | OK |
-| Blocklist.de (ssh) | 4,607 | OK |
-| Blocklist.de (bots) | 3,179 | OK |
-| GreenSnow | 3,056 | OK |
+| Blocklist.de (apache) | 9,160 | OK |
+| Blocklist.de (ssh) | 4,667 | OK |
+| Blocklist.de (bots) | 3,287 | OK |
+| GreenSnow | 3,145 | OK |
 | Spamhaus DROP | 1,663 | OK |
-| Tor Exit Nodes | 1,380 | OK |
-| Blocklist.de (bruteforcelogin) | 917 | OK |
+| Tor Exit Nodes | 1,386 | OK |
+| Blocklist.de (bruteforcelogin) | 962 | OK |
 | BinaryDefense | 771 | OK |
 | Emerging Threats | 583 | OK |
 | Blocklist.de (strongips) | 337 | OK |
