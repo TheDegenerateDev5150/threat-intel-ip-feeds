@@ -1,79 +1,79 @@
 # IP Blacklist Aggregator - Health Report
 
-**Date:** 2026-08-02T21:10:05.525467+00:00
-**Duration:** 664.42s
+**Date:** 2026-08-02T22:10:17.484752+00:00
+**Duration:** 38.6s
 **Successful:** 19/19
 
 ## Deduplication & Source Overlap
 
 | Metric | Value |
 |--------|-------|
-| Unique to single source | 64,128 |
-| Found in multiple sources | 41,149 |
-| Max source overlap | 8 |
+| Unique to single source | 64,401 |
+| Found in multiple sources | 41,176 |
+| Max source overlap | 9 |
 | Avg sources per IP | 1.76 |
 
 ### Per-Source Contribution
 
 | Source | Unique | Shared | Unique % |
 |--------|--------|--------|----------|
-| RTBH (Turkiye) | 35,756 | 24,414 | 59.4% |
-| SGB (Turkiye) | 9,645 | 355 | 96.5% |
-| CINS Army | 7,494 | 7,506 | 50.0% |
-| Stamparm IPsum | 6,908 | 25,382 | 21.4% |
+| RTBH (Turkiye) | 35,916 | 24,344 | 59.6% |
+| SGB (Turkiye) | 9,620 | 380 | 96.2% |
+| CINS Army | 7,550 | 7,450 | 50.3% |
+| Stamparm IPsum | 6,885 | 25,405 | 21.3% |
 | Spamhaus DROP | 1,664 | 0 | 100.0% |
-| AbuseIPDB | 1,437 | 8,563 | 14.4% |
-| Tor Exit Nodes | 727 | 678 | 51.7% |
-| GreenSnow | 200 | 2,496 | 7.4% |
+| AbuseIPDB | 1,433 | 8,567 | 14.3% |
+| Tor Exit Nodes | 726 | 679 | 51.7% |
+| GreenSnow | 206 | 2,450 | 7.8% |
+| AlienVault OTX | 177 | 40 | 81.6% |
 | Spamhaus DROPv6 | 91 | 0 | 100.0% |
-| AlienVault OTX | 74 | 15 | 83.1% |
-| BinaryDefense | 49 | 399 | 10.9% |
+| BinaryDefense | 50 | 398 | 11.2% |
 | Emerging Threats | 39 | 547 | 6.7% |
 | Blocklist.de (strongips) | 37 | 306 | 10.8% |
-| Blocklist.de (all) | 7 | 20,985 | 0.0% |
-| Blocklist.de (ssh) | 0 | 4,429 | 0.0% |
-| Blocklist.de (mail) | 0 | 13,018 | 0.0% |
-| Blocklist.de (apache) | 0 | 9,029 | 0.0% |
-| Blocklist.de (bots) | 0 | 2,348 | 0.0% |
-| Blocklist.de (bruteforcelogin) | 0 | 780 | 0.0% |
+| Blocklist.de (all) | 7 | 21,009 | 0.0% |
+| Blocklist.de (ssh) | 0 | 4,432 | 0.0% |
+| Blocklist.de (mail) | 0 | 13,032 | 0.0% |
+| Blocklist.de (apache) | 0 | 9,045 | 0.0% |
+| Blocklist.de (bots) | 0 | 2,339 | 0.0% |
+| Blocklist.de (bruteforcelogin) | 0 | 790 | 0.0% |
 
 ### Top Source Pair Overlaps
 
 | Pair | Shared IPs |
 |------|-----------|
-| Stamparm IPsum & RTBH (Turkiye) | 19,722 |
-| Blocklist.de (all) & Blocklist.de (mail) | 13,018 |
-| Blocklist.de (all) & RTBH (Turkiye) | 9,309 |
-| Blocklist.de (all) & Blocklist.de (apache) | 9,029 |
+| Stamparm IPsum & RTBH (Turkiye) | 19,736 |
+| Blocklist.de (all) & Blocklist.de (mail) | 13,032 |
+| Blocklist.de (all) & RTBH (Turkiye) | 9,257 |
+| Blocklist.de (all) & Blocklist.de (apache) | 9,045 |
 | Blocklist.de (mail) & Blocklist.de (apache) | 7,967 |
-| Blocklist.de (all) & Stamparm IPsum | 7,802 |
+| Blocklist.de (all) & Stamparm IPsum | 7,768 |
 | Stamparm IPsum & AbuseIPDB | 7,364 |
-| RTBH (Turkiye) & AbuseIPDB | 6,445 |
-| CINS Army & Stamparm IPsum | 6,342 |
-| Blocklist.de (all) & Blocklist.de (ssh) | 4,429 |
+| RTBH (Turkiye) & AbuseIPDB | 6,452 |
+| CINS Army & Stamparm IPsum | 6,361 |
+| Blocklist.de (all) & Blocklist.de (ssh) | 4,432 |
 
 ## All Sources
 
 | Source | IPs | Status |
 |--------|-----|--------|
-| RTBH (Turkiye) | 60,170 | OK |
+| RTBH (Turkiye) | 60,260 | OK |
 | Stamparm IPsum | 32,290 | OK |
-| Blocklist.de (all) | 20,992 | OK |
+| Blocklist.de (all) | 21,016 | OK |
 | CINS Army | 15,000 | OK |
-| Blocklist.de (mail) | 13,018 | OK |
+| Blocklist.de (mail) | 13,032 | OK |
 | AbuseIPDB | 10,000 | OK |
 | SGB (Turkiye) | 10,000 | OK |
-| Blocklist.de (apache) | 9,029 | OK |
-| Blocklist.de (ssh) | 4,429 | OK |
-| GreenSnow | 2,696 | OK |
-| Blocklist.de (bots) | 2,348 | OK |
+| Blocklist.de (apache) | 9,045 | OK |
+| Blocklist.de (ssh) | 4,432 | OK |
+| GreenSnow | 2,656 | OK |
+| Blocklist.de (bots) | 2,339 | OK |
 | Spamhaus DROP | 1,664 | OK |
 | Tor Exit Nodes | 1,405 | OK |
-| Blocklist.de (bruteforcelogin) | 780 | OK |
+| Blocklist.de (bruteforcelogin) | 790 | OK |
 | Emerging Threats | 586 | OK |
 | BinaryDefense | 448 | OK |
 | Blocklist.de (strongips) | 343 | OK |
+| AlienVault OTX | 217 | OK |
 | Spamhaus DROPv6 | 91 | OK |
-| AlienVault OTX | 89 | OK |
 
 ## All sources healthy.
