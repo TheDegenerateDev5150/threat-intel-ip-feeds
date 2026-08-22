@@ -1,79 +1,79 @@
 # IP Blacklist Aggregator - Health Report
 
-**Date:** 2026-08-22T10:40:13.087527+00:00
-**Duration:** 267.7s
+**Date:** 2026-08-22T11:34:52.790468+00:00
+**Duration:** 38.12s
 **Successful:** 19/19
 
 ## Deduplication & Source Overlap
 
 | Metric | Value |
 |--------|-------|
-| Unique to single source | 60,407 |
-| Found in multiple sources | 45,079 |
+| Unique to single source | 60,355 |
+| Found in multiple sources | 45,409 |
 | Max source overlap | 9 |
-| Avg sources per IP | 1.81 |
+| Avg sources per IP | 1.82 |
 
 ### Per-Source Contribution
 
 | Source | Unique | Shared | Unique % |
 |--------|--------|--------|----------|
-| RTBH (Turkiye) | 33,254 | 23,859 | 58.2% |
-| SGB (Turkiye) | 9,651 | 349 | 96.5% |
-| CINS Army | 6,523 | 8,477 | 43.5% |
-| Stamparm IPsum | 5,984 | 24,789 | 19.4% |
+| RTBH (Turkiye) | 33,089 | 24,059 | 57.9% |
+| SGB (Turkiye) | 9,632 | 368 | 96.3% |
+| CINS Army | 6,596 | 8,404 | 44.0% |
+| Stamparm IPsum | 5,928 | 24,845 | 19.3% |
 | Spamhaus DROP | 1,698 | 0 | 100.0% |
-| AbuseIPDB | 1,378 | 8,622 | 13.8% |
+| AbuseIPDB | 1,381 | 8,619 | 13.8% |
 | Tor Exit Nodes | 693 | 676 | 50.6% |
-| BinaryDefense | 447 | 2,212 | 16.8% |
-| GreenSnow | 319 | 1,891 | 14.4% |
-| AlienVault OTX | 166 | 32 | 83.8% |
+| BinaryDefense | 445 | 2,214 | 16.7% |
+| GreenSnow | 388 | 2,497 | 13.4% |
+| AlienVault OTX | 261 | 50 | 83.9% |
 | Blocklist.de (strongips) | 128 | 221 | 36.7% |
 | Spamhaus DROPv6 | 91 | 0 | 100.0% |
-| Blocklist.de (all) | 38 | 25,107 | 0.2% |
-| Blocklist.de (bots) | 14 | 6,082 | 0.2% |
+| Blocklist.de (all) | 13 | 25,186 | 0.1% |
 | Emerging Threats | 12 | 527 | 2.2% |
-| Blocklist.de (mail) | 8 | 12,246 | 0.1% |
-| Blocklist.de (apache) | 3 | 9,424 | 0.0% |
-| Blocklist.de (ssh) | 0 | 5,212 | 0.0% |
-| Blocklist.de (bruteforcelogin) | 0 | 916 | 0.0% |
+| Blocklist.de (ssh) | 0 | 5,220 | 0.0% |
+| Blocklist.de (mail) | 0 | 12,307 | 0.0% |
+| Blocklist.de (apache) | 0 | 9,409 | 0.0% |
+| Blocklist.de (bots) | 0 | 6,143 | 0.0% |
+| Blocklist.de (bruteforcelogin) | 0 | 902 | 0.0% |
 
 ### Top Source Pair Overlaps
 
 | Pair | Shared IPs |
 |------|-----------|
-| Stamparm IPsum & RTBH (Turkiye) | 17,108 |
-| Blocklist.de (all) & Blocklist.de (mail) | 12,228 |
-| Blocklist.de (all) & RTBH (Turkiye) | 10,230 |
-| Blocklist.de (all) & Blocklist.de (apache) | 9,417 |
+| Stamparm IPsum & RTBH (Turkiye) | 17,110 |
+| Blocklist.de (all) & Blocklist.de (mail) | 12,307 |
+| Blocklist.de (all) & RTBH (Turkiye) | 10,241 |
+| Blocklist.de (all) & Blocklist.de (apache) | 9,409 |
 | Blocklist.de (mail) & Blocklist.de (apache) | 7,967 |
-| Blocklist.de (all) & Stamparm IPsum | 7,730 |
-| CINS Army & Stamparm IPsum | 7,246 |
+| Blocklist.de (all) & Stamparm IPsum | 7,716 |
+| CINS Army & Stamparm IPsum | 7,192 |
 | Stamparm IPsum & AbuseIPDB | 6,906 |
-| RTBH (Turkiye) & AbuseIPDB | 6,220 |
-| Blocklist.de (all) & Blocklist.de (bots) | 6,073 |
+| RTBH (Turkiye) & AbuseIPDB | 6,223 |
+| Blocklist.de (all) & Blocklist.de (bots) | 6,142 |
 
 ## All Sources
 
 | Source | IPs | Status |
 |--------|-----|--------|
-| RTBH (Turkiye) | 57,113 | OK |
+| RTBH (Turkiye) | 57,148 | OK |
 | Stamparm IPsum | 30,773 | OK |
-| Blocklist.de (all) | 25,145 | OK |
+| Blocklist.de (all) | 25,199 | OK |
 | CINS Army | 15,000 | OK |
-| Blocklist.de (mail) | 12,254 | OK |
+| Blocklist.de (mail) | 12,307 | OK |
 | AbuseIPDB | 10,000 | OK |
 | SGB (Turkiye) | 10,000 | OK |
-| Blocklist.de (apache) | 9,427 | OK |
-| Blocklist.de (bots) | 6,096 | OK |
-| Blocklist.de (ssh) | 5,212 | OK |
+| Blocklist.de (apache) | 9,409 | OK |
+| Blocklist.de (bots) | 6,143 | OK |
+| Blocklist.de (ssh) | 5,220 | OK |
+| GreenSnow | 2,885 | OK |
 | BinaryDefense | 2,659 | OK |
-| GreenSnow | 2,210 | OK |
 | Spamhaus DROP | 1,698 | OK |
 | Tor Exit Nodes | 1,369 | OK |
-| Blocklist.de (bruteforcelogin) | 916 | OK |
+| Blocklist.de (bruteforcelogin) | 902 | OK |
 | Emerging Threats | 539 | OK |
 | Blocklist.de (strongips) | 349 | OK |
-| AlienVault OTX | 198 | OK |
+| AlienVault OTX | 311 | OK |
 | Spamhaus DROPv6 | 91 | OK |
 
 ## All sources healthy.
