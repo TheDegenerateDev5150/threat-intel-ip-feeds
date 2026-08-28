@@ -1,79 +1,95 @@
 # IP Blacklist Aggregator - Health Report
 
-**Date:** 2026-08-27T20:30:45.922405+00:00
-**Duration:** 48.33s
-**Successful:** 19/19
+**Date:** 2026-08-28T05:24:42.797306+00:00
+**Duration:** 65.69s
+**Successful:** 18/19
+
+## Failed Sources This Run
+
+| Source | Error | Cached |
+|--------|------|--------|
+| GreenSnow | HttpError: HTTP 503: <!DOCTYPE html>
+<html style="height:100%">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title> 503 Service Unavailable
+</title | 3,742 IPs from cache |
 
 ## Deduplication & Source Overlap
 
 | Metric | Value |
 |--------|-------|
-| Unique to single source | 67,603 |
-| Found in multiple sources | 43,496 |
+| Unique to single source | 63,582 |
+| Found in multiple sources | 45,095 |
 | Max source overlap | 8 |
-| Avg sources per IP | 1.73 |
+| Avg sources per IP | 1.81 |
 
 ### Per-Source Contribution
 
 | Source | Unique | Shared | Unique % |
 |--------|--------|--------|----------|
-| RTBH (Turkiye) | 38,234 | 22,425 | 63.0% |
-| SGB (Turkiye) | 9,639 | 361 | 96.4% |
-| CINS Army | 7,636 | 7,364 | 50.9% |
-| Stamparm IPsum | 6,885 | 22,759 | 23.2% |
-| AbuseIPDB | 1,931 | 8,069 | 19.3% |
+| RTBH (Turkiye) | 36,331 | 23,032 | 61.2% |
+| SGB (Turkiye) | 9,648 | 352 | 96.5% |
+| Stamparm IPsum | 7,227 | 26,861 | 21.2% |
+| CINS Army | 5,816 | 9,184 | 38.8% |
 | Spamhaus DROP | 1,704 | 0 | 100.0% |
-| Tor Exit Nodes | 719 | 697 | 50.8% |
-| GreenSnow | 445 | 3,297 | 11.9% |
-| AlienVault OTX | 219 | 57 | 79.3% |
+| AbuseIPDB | 1,492 | 8,508 | 14.9% |
+| Tor Exit Nodes | 683 | 732 | 48.3% |
+| GreenSnow | 258 | 3,484 | 6.9% |
+| AlienVault OTX | 213 | 49 | 81.3% |
 | Spamhaus DROPv6 | 92 | 0 | 100.0% |
-| BinaryDefense | 32 | 407 | 7.3% |
-| Blocklist.de (strongips) | 31 | 234 | 11.7% |
-| Blocklist.de (all) | 25 | 24,766 | 0.1% |
-| Emerging Threats | 11 | 531 | 2.0% |
-| Blocklist.de (ssh) | 0 | 6,585 | 0.0% |
-| Blocklist.de (mail) | 0 | 13,579 | 0.0% |
-| Blocklist.de (apache) | 0 | 9,696 | 0.0% |
-| Blocklist.de (bots) | 0 | 2,776 | 0.0% |
-| Blocklist.de (bruteforcelogin) | 0 | 1,163 | 0.0% |
+| BinaryDefense | 88 | 665 | 11.7% |
+| Blocklist.de (all) | 15 | 25,185 | 0.1% |
+| Emerging Threats | 10 | 525 | 1.9% |
+| Blocklist.de (strongips) | 5 | 237 | 2.1% |
+| Blocklist.de (ssh) | 0 | 6,870 | 0.0% |
+| Blocklist.de (mail) | 0 | 13,914 | 0.0% |
+| Blocklist.de (apache) | 0 | 9,726 | 0.0% |
+| Blocklist.de (bots) | 0 | 2,531 | 0.0% |
+| Blocklist.de (bruteforcelogin) | 0 | 1,185 | 0.0% |
 
 ### Top Source Pair Overlaps
 
 | Pair | Shared IPs |
 |------|-----------|
-| Stamparm IPsum & RTBH (Turkiye) | 16,234 |
-| Blocklist.de (all) & Blocklist.de (mail) | 13,579 |
-| Blocklist.de (all) & Blocklist.de (apache) | 9,696 |
-| Blocklist.de (all) & RTBH (Turkiye) | 9,004 |
+| Stamparm IPsum & RTBH (Turkiye) | 17,185 |
+| Blocklist.de (all) & Blocklist.de (mail) | 13,914 |
+| Blocklist.de (all) & Stamparm IPsum | 9,884 |
+| Blocklist.de (all) & RTBH (Turkiye) | 9,876 |
+| Blocklist.de (all) & Blocklist.de (apache) | 9,726 |
+| CINS Army & Stamparm IPsum | 8,038 |
 | Blocklist.de (mail) & Blocklist.de (apache) | 7,967 |
-| Blocklist.de (all) & Stamparm IPsum | 7,244 |
-| Blocklist.de (all) & Blocklist.de (ssh) | 6,585 |
-| CINS Army & Stamparm IPsum | 6,112 |
-| Stamparm IPsum & AbuseIPDB | 5,722 |
-| RTBH (Turkiye) & AbuseIPDB | 5,342 |
+| Stamparm IPsum & AbuseIPDB | 6,986 |
+| Blocklist.de (all) & Blocklist.de (ssh) | 6,870 |
+| RTBH (Turkiye) & AbuseIPDB | 5,572 |
+
+## Consecutively Failing Sources
+
+| Source | Failures | Last Failure | Reason |
+|--------|----------|-------------|--------|
+| GreenSnow | 1 | 2026-08-28 | HttpError: HTTP 503: <!DOCTYPE html>
+<html style="height:100 |
 
 ## All Sources
 
 | Source | IPs | Status |
 |--------|-----|--------|
-| RTBH (Turkiye) | 60,659 | OK |
-| Stamparm IPsum | 29,644 | OK |
-| Blocklist.de (all) | 24,791 | OK |
+| RTBH (Turkiye) | 59,363 | OK |
+| Stamparm IPsum | 34,088 | OK |
+| Blocklist.de (all) | 25,200 | OK |
 | CINS Army | 15,000 | OK |
-| Blocklist.de (mail) | 13,579 | OK |
+| Blocklist.de (mail) | 13,914 | OK |
 | AbuseIPDB | 10,000 | OK |
 | SGB (Turkiye) | 10,000 | OK |
-| Blocklist.de (apache) | 9,696 | OK |
-| Blocklist.de (ssh) | 6,585 | OK |
-| GreenSnow | 3,742 | OK |
-| Blocklist.de (bots) | 2,776 | OK |
+| Blocklist.de (apache) | 9,726 | OK |
+| Blocklist.de (ssh) | 6,870 | OK |
+| GreenSnow | 3,742 | CACHED |
+| Blocklist.de (bots) | 2,531 | OK |
 | Spamhaus DROP | 1,704 | OK |
-| Tor Exit Nodes | 1,416 | OK |
-| Blocklist.de (bruteforcelogin) | 1,163 | OK |
-| Emerging Threats | 542 | OK |
-| BinaryDefense | 439 | OK |
-| AlienVault OTX | 276 | OK |
-| Blocklist.de (strongips) | 265 | OK |
+| Tor Exit Nodes | 1,415 | OK |
+| Blocklist.de (bruteforcelogin) | 1,185 | OK |
+| BinaryDefense | 753 | OK |
+| Emerging Threats | 535 | OK |
+| AlienVault OTX | 262 | OK |
+| Blocklist.de (strongips) | 242 | OK |
 | Spamhaus DROPv6 | 92 | OK |
-
-## All sources healthy.
