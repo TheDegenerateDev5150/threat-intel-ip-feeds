@@ -1,8 +1,8 @@
 # IPv6 Blacklist
-# Updated: 2026-09-12T22:18:31.657948+00:00
+# Updated: 2026-09-13T01:01:03.585053+00:00
 # IPs: 9 | CIDRs: 92
-# Duration: 35.73s
-# Sources: 19/19 OK
+# Duration: 95.55s
+# Sources: 18/19 OK
 #
 2001:19f0:ac01:1ad7:5400:6ff:fe72:b8f2
 2001:41d0:701:1100::9bea
